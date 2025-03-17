@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react';
 
-function App() {
-  const [data, setData] = useState(null);
+export default function App() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/data')
+    fetch('/api/projects')
       .then(response => {
         if(!response.ok) {
           throw new Error('Network response was not ok');
@@ -13,10 +14,14 @@ function App() {
         return response.json();
       })
       .then(data => {
-        setData(data);
+        console.log(data);
+        setProjects(data);
+        setLoading(false);
       })
       .catch(error => {
         console.error('There was an error fetching the data!', error);
+        setError('Erreur lors du chargement des projets');
+        setLoading(false);
       });
   }, []);
 
@@ -24,10 +29,37 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Portfolio de Développeur</h1>
-        {data ? <p>{data.message}</p> : <p>Chargement...</p>}
       </header>
+      <main>
+        {loading && <p>Chargement...</p>}
+        {error && <p>{error}</p>}
+        {!loading && !error && (
+          <div className="projects">
+            <h2>Mes projets</h2>
+            {projects.length > 0 ? (
+              <div className="projects-grid">
+                {projects.map(project => (
+                  <div key={project.id} className="project-card">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    {project.technologies && <p>Technologies: {project.technologies}</p>}
+                    <div className="project-links">
+                      {project.github_url && (
+                        <a href={project.github_url} target="_blank" rel="noopener noreferrer">GitHub</a>
+                      )}
+                      {project.live_url && (
+                        <a href={project.live_url} target="_blank" rel="noopener noreferrer">Site Live</a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p>Aucun projet à afficher</p>
+            )}
+          </div>
+        )}
+      </main>
     </div>
   );
 }
-
-export default App;
