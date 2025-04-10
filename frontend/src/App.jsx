@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 export default function App() {
 
   return (
-    <div className="py-8">
+    <div id="about" className="py-8">
       <NavBar />
       <About />
       <hr id="skills" className="border-gray-800 dark:border-white/30" />
