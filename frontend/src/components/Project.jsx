@@ -1,4 +1,6 @@
-export default function Project({ project }) {
+import withTranslation from "./TranslatedComponent";
+
+const Project = ({ t, project }) => {
     return (
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-700">
             {project.image && (
@@ -6,7 +8,7 @@ export default function Project({ project }) {
             )}
             <div className="px-6 py-4">
                 <h3 className="font-bold text-xl mb-2 text-white">{project.title}</h3>
-                <p className="text-gray-300 text-base mb-4">{project.description}</p>
+                <p className="text-gray-300 text-base mb-4">{t(`projects.${project.translationKey}`)}</p>
                 {project.technologies && (
                     <p className="text-gray-400 text-sm mb-4">
                         Technologies: {project.technologies}
@@ -30,7 +32,7 @@ export default function Project({ project }) {
                             rel="noopener noreferrer"
                             className="text-green-400 hover:text-green-300 transition-colors"
                         >
-                            Site Live
+                            {project.live_url_text}
                         </a>
                     )}
                 </div>
@@ -38,3 +40,5 @@ export default function Project({ project }) {
         </div>
     );
 }
+
+export default withTranslation(Project);

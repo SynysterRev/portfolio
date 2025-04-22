@@ -1,20 +1,40 @@
 export const projects = [
     {
         id: 1,
-        title: "Portfolio Personnel",
-        description: "Portfolio créé avec React et TailwindCSS",
-        technologies: "React, TailwindCSS, Vite",
-        image: "/images/portfolio.png",
-        github_url: "https://github.com/username/portfolio",
-        live_url: "https://portfolio.com"
+        title: "SoftDesk", 
+        translationKey: "SoftDesk",
+        technologies: "Python, Django, Django REST Framework, PostMan, Poetry",
+        image: "/images/rest-api.svg",
+        github_url: "https://github.com/SynysterRev/SoftDesk",
+        live_url: "https://documenter.getpostman.com/view/40327893/2sAYXBEyWR",
+        live_url_text: "API documentation"
     },
     {
         id: 2,
-        title: "Projet 2",
-        description: "Description du projet 2",
-        technologies: "Python, Django, PostgreSQL",
-        image: "/images/projet2.png",
-        github_url: "https://github.com/username/projet2",
-        live_url: "https://projet2.com"
+        title: "LITRevu", 
+        translationKey: "LITRevu",
+        technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
+        image: "/images/rest-api.svg",
+        github_url: "https://github.com/SynysterRev/SoftDesk",
+        live_url: "https://documenter.getpostman.com/view/40327893/2sAYXBEyWR",
+        live_url_text: "Live site"
+    },
+    {
+        id: 3,
+        title: "AlgoInvest", 
+        translationKey: "AlgoInvest",
+        technologies: "Python",
+        image: "/images/algo-invest.png",
+        github_url: "https://github.com/SynysterRev/AlgoInvest",
+        live_url: ""
+    },
+    {
+        id: 4,
+        title: "StocksApplication",
+        translationKey: "StocksApplication",
+        technologies: "ASP .NET Core, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
+        image: "/images/algo-invest.png",
+        github_url: "https://github.com/SynysterRev/StocksApplication",
+        live_url: ""
     }
 ];

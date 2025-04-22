@@ -1,8 +1,9 @@
 import Hamburger from "./Hamburger";
 import { useMediaQuery } from 'react-responsive'
 import { useEffect, useState } from 'react';
+import withTranslation from './TranslatedComponent';
 
-export default function NavBar() {
+const NavBar = ({ t, toggleLanguage, currentLang }) => {
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
     const [activeSection, setActiveSection] = useState('about');
 
@@ -71,18 +72,26 @@ export default function NavBar() {
                                         key={section}
                                         onClick={() => scrollToSection(section)}
                                         className={`text-xl cursor-pointer transition-all duration-300 ${activeSection === section
-                                                ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
-                                                : 'text-white hover:text-gray-300'
+                                            ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
+                                            : 'text-white hover:text-gray-300'
                                             }`}
                                     >
-                                        {section.charAt(0).toUpperCase() + section.slice(1)}
+                                        {t(`nav.${section}`)}
                                     </button>
                                 ))}
                             </div>
                         )}
                     </div>
+                    <button
+                        onClick={toggleLanguage}
+                        className="z-50 px-3 py-1 rounded-full bg-gray-800 text-white"
+                    >
+                        {currentLang.toUpperCase()}
+                    </button>
                 </div>
             </nav>
         </div>
     );
 }
+
+export default withTranslation(NavBar);

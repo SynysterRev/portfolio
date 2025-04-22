@@ -1,8 +1,9 @@
 import GradientText from "./GradientText";
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import withTranslation from "./TranslatedComponent";
 
-export default function Contact() {
+const Contact = ({ t }) => {
     const form = useRef();
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -38,19 +39,19 @@ export default function Contact() {
         <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg">
             {isSubmitted && (
                 <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                    Message sent successfully!
+                    {t("contact.messageSend")}
                 </div>
             )}
             <div className="flex flex-col items-center">
                 <label htmlFor="name" className="block text-gray-700 dark:text-white mb-2 w-full">
-                    Name:
+                {t("contact.name")}:
                 </label>
                 <input
                     type="text"
                     id="name"
                     name="name"
                     className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-lg mb-12"
-                    placeholder="Enter your name"
+                    placeholder={t("contact.enterName")}
                 />
                 <label htmlFor="email" className="block text-gray-700 dark:text-white mb-2 w-full">
                     Email:
@@ -60,7 +61,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-lg mb-12"
-                    placeholder="Enter your email"
+                    placeholder={t("contact.enterEmail")}
                 />
                 <label htmlFor="message" className="block text-gray-700 dark:text-white mb-2 w-full">
                     Message:
@@ -87,12 +88,14 @@ export default function Contact() {
                                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-                                Sending...
+                                {t("contact.sending")}
                             </>
-                        ) : 'Send'}
+                        ) : t("contact.send")}
                     </span>
                 </button>
             </div>
         </form>
     </div>;
 }
+
+export default withTranslation(Contact);

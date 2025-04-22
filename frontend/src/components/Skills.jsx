@@ -14,12 +14,13 @@ import djangoIcon from "../assets/icons/django-icon.svg";
 import sqlIcon from "../assets/icons/sql-icon.svg";
 import unityIcon from "../assets/icons/unity-icon.png";
 import unrealIcon from "../assets/icons/unreal-icon.png";
+import withTranslation from "./TranslatedComponent";
 
-export default function Skills() {
+const Skills = ({ t }) => {
   return (
     <div className="flex justify-center items-center flex-col mt-30">
-      <GradientText text="Skills" />
-      <p className="text-xl">Tools and technologies I use:</p>
+      <GradientText text={t('nav.skills')} />
+      <p className="text-xl">{t('skillsSection')}</p>
       <div className="flex gap-10 my-14">
         <img src={htmlIcon} alt="HTML icon" className="w-16 h-16"></img>
         <img src={cssIcon} alt="CSS icon" className="w-16 h-16"></img>
@@ -44,3 +45,5 @@ export default function Skills() {
     </div>
   );
 }
+
+export default withTranslation(Skills);
