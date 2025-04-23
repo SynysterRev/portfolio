@@ -16,7 +16,7 @@ export const projects = [
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
         image: "/images/rest-api.svg",
         github_url: "https://github.com/SynysterRev/SoftDesk",
-        live_url: "https://documenter.getpostman.com/view/40327893/2sAYXBEyWR",
+        live_url: "https://synyst.eu.pythonanywhere.com",
         live_url_text: "Live site"
     },
     {
