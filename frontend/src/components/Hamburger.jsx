@@ -1,7 +1,7 @@
 import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import withTranslation from './TranslatedComponent';
-import '../Hamburger.css'; 
+import '../hamburger.css'; 
 
 const Hamburger = ({ t }) => {
     const [isOpen, setIsOpen] = useState(false);
