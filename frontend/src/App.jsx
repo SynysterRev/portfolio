@@ -21,7 +21,7 @@ export default function App() {
     <div id="about" className="py-8">
       <NavBar toggleLanguage={toggleLanguage} currentLang={currentLang}/>
       <About />
-      <hr id="skills" className="border-gray-800 dark:border-white/30" />
+      <hr id="skills" className="border-gray-800 dark:border-white/30 py-8 overflow-x-hidden" />
       <Skills />
       <hr id="projects" className="border-gray-800 dark:border-white/30" />
       <Projects />

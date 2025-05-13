@@ -42,7 +42,7 @@ const Contact = ({ t }) => {
                     {t("contact.messageSend")}
                 </div>
             )}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center px-8">
                 <label htmlFor="name" className="block text-gray-700 dark:text-white mb-2 w-full">
                 {t("contact.name")}:
                 </label>
@@ -69,7 +69,7 @@ const Contact = ({ t }) => {
                 <textarea
                     id="message"
                     name="message"
-                    className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-lg mb-12"
+                    className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-lg mb-12 min-h-[200px] resize-y"
                 />
                 <button
                     type="submit"

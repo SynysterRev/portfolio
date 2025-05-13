@@ -21,13 +21,13 @@ const Skills = ({ t }) => {
     <div className="flex justify-center items-center flex-col mt-30">
       <GradientText text={t('nav.skills')} />
       <p className="text-xl">{t('skillsSection')}</p>
-      <div className="flex gap-10 my-14">
+      <div className="flex flex-wrap justify-center gap-10 max-w-full px-4 my-8">
         <img src={htmlIcon} alt="HTML icon" className="w-16 h-16"></img>
         <img src={cssIcon} alt="CSS icon" className="w-16 h-16"></img>
         <img src={jsIcon} alt="JavaScript icon" className="w-16 h-16"></img>
         <img src={tailwindIcon} alt="Tailwind icon" className="w-16 h-16"></img>
       </div>
-      <div className="flex gap-10 my-14 justify-self-start">
+      <div className="flex flex-wrap justify-center gap-10 max-w-full px-4 my-8">
         <img src={pythonIcon} alt="Python icon" className="w-16 h-16"></img>
         <img src={cSharpIcon} alt="C# icon" className="w-16 h-16"></img>
         <img src={cPPIcon} alt="C++ icon" className="w-16 h-16"></img>
@@ -36,7 +36,7 @@ const Skills = ({ t }) => {
         <img src={djangoIcon} alt="Django icon" className="w-16 h-16"></img>
         <img src={sqlIcon} alt="SQL icon" className="w-16 h-16"></img>
       </div>
-      <div className="flex gap-10 my-14">
+      <div className="flex flex-wrap justify-center gap-10 max-w-full px-4 my-8">
         <img src={unityIcon} alt="Unity icon" className="w-16 h-16"></img>
         <img src={unrealIcon} alt="Unreal icon" className="w-16 h-16"></img>
       </div>
