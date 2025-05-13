@@ -1,17 +1,43 @@
 import { slide as Menu } from 'react-burger-menu';
-import '../hamburger.css';
+import { useState } from 'react';
+import withTranslation from './TranslatedComponent';
+import '../Hamburger.css'; 
 
-// import {Link} from 'react-router-dom';
+const Hamburger = ({ t }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-export default function Hamburger() {
+    const handleStateChange = (state) => {
+        setIsOpen(state.isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            closeMenu();
+        }
+    };
 
     return (
-        <Menu right>
-            <a id="home" className="menu-item" href="/">Home</a>
-            <a id="projects" className="menu-item" href="/projects">Projects</a>
-            <a id="contact" className="menu-item" href="/contact">Contact</a>
-            {/* <a onClick={this.showSettings} className="menu-item--small" href="">Settings</a> */}
-
+        <Menu 
+            right 
+            isOpen={isOpen}
+            onStateChange={handleStateChange}
+        >
+            {['about', 'skills', 'projects', 'games', 'contact'].map((section) => (
+                <button
+                    key={section}
+                    onClick={() => scrollToSection(section)}
+                    className="menu-item" >
+                    {t(`nav.${section}`)}
+                </button>
+            ))}
         </Menu>
     );
 }
+
+export default withTranslation(Hamburger);

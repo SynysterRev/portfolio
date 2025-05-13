@@ -1,5 +1,4 @@
 import Link from "./Link";
-import { useTranslation } from 'react-i18next';
 import withTranslation from './TranslatedComponent';
 
 const About = ({t}) => {

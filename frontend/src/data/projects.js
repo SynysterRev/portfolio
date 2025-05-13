@@ -14,7 +14,7 @@ export const projects = [
         title: "LITRevu", 
         translationKey: "LITRevu",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
-        image: "/images/rest-api.svg",
+        image: "/images/book-review.svg",
         github_url: "https://github.com/SynysterRev/SoftDesk",
         live_url: "https://synyst.eu.pythonanywhere.com",
         live_url_text: "Live site"
@@ -32,9 +32,18 @@ export const projects = [
         id: 4,
         title: "StocksApplication",
         translationKey: "StocksApplication",
-        technologies: "ASP .NET Core, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
-        image: "/images/algo-invest.png",
+        technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
+        image: "/images/stocks.svg",
         github_url: "https://github.com/SynysterRev/StocksApplication",
+        live_url: ""
+    },
+    {
+        id: 5,
+        title: "OrdersManagerAPI",
+        translationKey: "OrdersManagerAPI",
+        technologies: "ASP .NET Core API, C#, Entity Framework, MySQL",
+        image: "/images/net-api.svg",
+        github_url: "https://github.com/SynysterRev/OrderManager",
         live_url: ""
     }
 ];

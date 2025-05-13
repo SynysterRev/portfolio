@@ -25,9 +25,7 @@ const Skills = ({ t }) => {
         <img src={htmlIcon} alt="HTML icon" className="w-16 h-16"></img>
         <img src={cssIcon} alt="CSS icon" className="w-16 h-16"></img>
         <img src={jsIcon} alt="JavaScript icon" className="w-16 h-16"></img>
-        //<img src={reactIcon} alt="React icon" className="w-16 h-16"></img>
         <img src={tailwindIcon} alt="Tailwind icon" className="w-16 h-16"></img>
-        //<img src={angularIcon} alt="Angular icon" className="w-16 h-16"></img>
       </div>
       <div className="flex gap-10 my-14 justify-self-start">
         <img src={pythonIcon} alt="Python icon" className="w-16 h-16"></img>

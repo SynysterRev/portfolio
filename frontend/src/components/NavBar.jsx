@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react';
 import withTranslation from './TranslatedComponent';
 
 const NavBar = ({ t, toggleLanguage, currentLang }) => {
-    const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
     const [activeSection, setActiveSection] = useState('about');
+    const sections = ['about', 'skills', 'projects', 'games', 'contact'];
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -16,8 +17,6 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['about', 'skills', 'projects', 'games', 'contact'];
-
             let closest = null;
             let closestDistance = Infinity;
 
@@ -38,6 +37,7 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
             }
         };
 
+        // Throttle to limit the number of scroll events
         let timeoutId;
         const throttledScroll = () => {
             if (!timeoutId) {
@@ -57,41 +57,46 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
         };
     }, []);
 
+    const renderNavButton = (section) => (
+        <button
+            key={section}
+            onClick={() => scrollToSection(section)}
+            className={`text-xl cursor-pointer transition-all duration-300 ${activeSection === section
+                    ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
+                    : 'text-white hover:text-gray-300'
+                }`}
+        >
+            {t(`nav.${section}`)}
+        </button>
+    );
+
     return (
         <div className="fixed z-50 top-0 left-0 right-0 mx-4 backdrop-blur-sm mt-8">
             <nav className="mx-auto max-w-7xl border rounded-lg border-white/40 bg-gray-900/80">
                 <div className="flex gap-4 p-4 justify-between items-center">
                     <h2 className="text-white font-bold text-2xl">Michaël</h2>
+
                     <div className="flex-1 flex justify-center">
-                        {isMobile ? (
-                            <Hamburger />
-                        ) : (
+                        {!isMobile && (
                             <div className="flex gap-5">
-                                {['about', 'skills', 'projects', 'games', 'contact'].map((section) => (
-                                    <button
-                                        key={section}
-                                        onClick={() => scrollToSection(section)}
-                                        className={`text-xl cursor-pointer transition-all duration-300 ${activeSection === section
-                                            ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
-                                            : 'text-white hover:text-gray-300'
-                                            }`}
-                                    >
-                                        {t(`nav.${section}`)}
-                                    </button>
-                                ))}
+                                {sections.map(renderNavButton)}
                             </div>
                         )}
                     </div>
-                    <button
-                        onClick={toggleLanguage}
-                        className="z-50 px-3 py-1 rounded-full bg-gray-800 text-white"
-                    >
-                        {currentLang.toUpperCase()}
-                    </button>
+
+                    <div className="flex items-center gap-4">
+                        <button
+                            onClick={toggleLanguage}
+                            className="z-50 px-3 py-1 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
+                        >
+                            {currentLang.toUpperCase()}
+                        </button>
+                        {isMobile && <Hamburger />}
+                    </div>
                 </div>
             </nav>
         </div>
     );
-}
+};
 
 export default withTranslation(NavBar);
