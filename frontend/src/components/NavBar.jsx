@@ -62,8 +62,8 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
             key={section}
             onClick={() => scrollToSection(section)}
             className={`text-xl cursor-pointer transition-all duration-300 ${activeSection === section
-                    ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
-                    : 'text-white hover:text-gray-300'
+                ? 'bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent font-bold scale-110'
+                : 'text-white hover:text-gray-300'
                 }`}
         >
             {t(`nav.${section}`)}
@@ -71,10 +71,10 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
     );
 
     return (
-        <div className="fixed z-50 top-0 left-0 right-0 mx-4 backdrop-blur-sm mt-8">
-            <nav className="mx-auto max-w-7xl border rounded-lg border-white/40 bg-gray-900/80">
-                <div className="flex gap-4 p-4 justify-between items-center">
-                    <h2 className="text-white font-bold text-2xl">Michaël</h2>
+        <div className="fixed z-50 top-0 left-0 right-0 mt-8">
+            <nav className="mx-auto max-w-7xl border rounded-lg border-white/40 bg-gray-900/80 mx-2">
+                <div className="flex gap-2 p-4 justify-between items-center">
+                    <h2 className="text-white font-bold text-xl sm:text-2xl">Michaël</h2>
 
                     <div className="flex-1 flex justify-center">
                         {!isMobile && (
@@ -84,10 +84,10 @@ const NavBar = ({ t, toggleLanguage, currentLang }) => {
                         )}
                     </div>
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
                         <button
                             onClick={toggleLanguage}
-                            className="z-50 px-3 py-1 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
+                            className="z-50 px-2 py-1 text-sm sm:text-base sm:px-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
                         >
                             {currentLang.toUpperCase()}
                         </button>
