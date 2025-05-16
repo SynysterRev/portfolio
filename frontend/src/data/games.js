@@ -1,11 +1,11 @@
 export const games = [
     {
         id: 1,
-        title: "Harmony the fall of Reverie",
+        title: "Harmony: The Fall of Reverie",
         translationKey: "Harmony",
         technologies: "C++, Unreal Engine 5",
         image: "/images/harmony.jpg",
-        live_url: "https://dont-nod.com/en/games/harmony-fr/",
+        live_url: "https://dont-nod.com/en/games/harmony/",
         live_url_text: "Website"
     },
     {

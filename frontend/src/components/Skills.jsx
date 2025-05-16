@@ -27,6 +27,8 @@ const Skills = ({ t }) => {
         <img src={jsIcon} alt="JavaScript icon" className="w-16 h-16"></img>
         <img src={tailwindIcon} alt="Tailwind icon" className="w-16 h-16"></img>
       </div>
+      <div className="w-3/4 sm:w-1/4 h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
+      
       <div className="flex flex-wrap justify-center gap-10 max-w-full px-4 my-8">
         <img src={pythonIcon} alt="Python icon" className="w-16 h-16"></img>
         <img src={cSharpIcon} alt="C# icon" className="w-16 h-16"></img>
@@ -36,6 +38,8 @@ const Skills = ({ t }) => {
         <img src={djangoIcon} alt="Django icon" className="w-16 h-16"></img>
         <img src={sqlIcon} alt="SQL icon" className="w-16 h-16"></img>
       </div>
+      <div className="w-3/4 sm:w-1/4 h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
+      
       <div className="flex flex-wrap justify-center gap-10 max-w-full px-4 my-8">
         <img src={unityIcon} alt="Unity icon" className="w-16 h-16"></img>
         <img src={unrealIcon} alt="Unreal icon" className="w-16 h-16"></img>
