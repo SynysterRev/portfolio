@@ -53,7 +53,7 @@ export const projects = [
         technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
         image: "/images/budgetmanager.png",
         github_url: "https://github.com/SynysterRev/BudgetManager",
-        live_url: "https://budget-manager-jet.vercel.app/",
+        live_url: "https://budget-manager-ruddy.vercel.app/",
         live_url_text: "Live site"
     }
 ];
