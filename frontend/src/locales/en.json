@@ -32,6 +32,7 @@
         "StocksApplication": "This is a project built with ASP.NET Core (.NET 8). It fetches and displays real-time stock prices using the Finnhub API. The project is continuously updated as I progress through my ASP.NET Core journey.",
         "Harmony": "Harmony is a 2D story-driven game. I worked on the project as both a Gameplay Programmer and UI Programmer, focusing on implementing core mechanics and designing intuitive user interfaces that support the narrative experience.",
         "Jusant": "Jusant is a 3D climbing game that emphasizes exploration and environmental storytelling. I contributed to the project as a UI Programmer, developing the menu and HUD systems such as icons appearing above the interactable objects.",
-        "OrdersManagerAPI": "This project is an API built with .NET Core, designed to manage orders and their associated items. It provides CRUD operations to create, read, update, and delete orders and order items. The API uses Entity Framework for data access and MySQL as the database."
+        "OrdersManagerAPI": "This project is an API built with .NET Core, designed to manage orders and their associated items. It provides CRUD operations to create, read, update, and delete orders and order items. The API uses Entity Framework for data access and MySQL as the database.",
+        "BudgetManager": "Budget Manager is a Django-based web application designed to help users manage their personal finances with ease. It allows users to securely create an account, track income and expenses, organize transactions by category, and export their financial data."
     }
 }

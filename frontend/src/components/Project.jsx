@@ -4,7 +4,7 @@ const Project = ({ t, project }) => {
     return (
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-700">
             {project.image && (
-                <img className="w-full h-48 object-cover" src={project.image} alt={project.title} />
+                <img className="w-full h-48 object-contain" src={project.image} alt={project.title} />
             )}
             <div className="px-6 py-4">
                 <h3 className="font-bold text-xl mb-2 text-white">{project.title}</h3>

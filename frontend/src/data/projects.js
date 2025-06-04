@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        title: "SoftDesk", 
+        title: "SoftDesk",
         translationKey: "SoftDesk",
         technologies: "Python, Django, Django REST Framework, PostMan, Poetry",
         image: "/images/rest-api.svg",
@@ -11,7 +11,7 @@ export const projects = [
     },
     {
         id: 2,
-        title: "LITRevu", 
+        title: "LITRevu",
         translationKey: "LITRevu",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
         image: "/images/book-review.svg",
@@ -21,7 +21,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "AlgoInvest", 
+        title: "AlgoInvest",
         translationKey: "AlgoInvest",
         technologies: "Python",
         image: "/images/algo-invest.png",
@@ -45,5 +45,15 @@ export const projects = [
         image: "/images/net-api.svg",
         github_url: "https://github.com/SynysterRev/OrderManager",
         live_url: ""
+    },
+    {
+        id: 6,
+        title: "BugdetManager",
+        translationKey: "BudgetManager",
+        technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
+        image: "/images/budgetmanager.png",
+        github_url: "https://github.com/SynysterRev/BudgetManager",
+        live_url: "https://budget-manager-jet.vercel.app/",
+        live_url_text: "Live site"
     }
 ];
