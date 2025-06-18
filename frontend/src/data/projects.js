@@ -11,6 +11,35 @@ export const projects = [
     },
     {
         id: 2,
+        title: "BugdetManager",
+        translationKey: "BudgetManager",
+        technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
+        image: "/images/budgetmanager.png",
+        github_url: "https://github.com/SynysterRev/BudgetManager",
+        live_url: "https://budget-manager-ruddy.vercel.app/",
+        live_url_text: "Live site"
+    },
+    {
+        id: 3,
+        title: "Orange County Lettings",
+        translationKey: "OrangeLettings",
+        technologies: "Python, Django, HTML, CSS, JavaScript, SQLite, Render, Sentry, GitHub Actions",
+        image: "/images/orange-lettings.png",
+        github_url: "https://github.com/SynysterRev/Orange_County_Lettings",
+        live_url: "https://orange-county-lettings-l543.onrender.com",
+        live_url_text: "Live site"
+    }, 
+    {
+        id: 4,
+        title: "Epic Event",
+        translationKey: "EpicEvent",
+        technologies: "Python, PostgreSQL, Sentry, CLI",
+        image: "/images/epic-event.png",
+        github_url: "https://github.com/SynysterRev/EpicEvent",
+        live_url: "",
+    },
+    {
+        id: 5,
         title: "LITRevu",
         translationKey: "LITRevu",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
@@ -20,7 +49,7 @@ export const projects = [
         live_url_text: "Live site"
     },
     {
-        id: 3,
+        id: 6,
         title: "AlgoInvest",
         translationKey: "AlgoInvest",
         technologies: "Python",
@@ -29,7 +58,7 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 4,
+        id: 7,
         title: "StocksApplication",
         translationKey: "StocksApplication",
         technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
@@ -38,22 +67,12 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 5,
+        id: 8,
         title: "OrdersManagerAPI",
         translationKey: "OrdersManagerAPI",
         technologies: "ASP .NET Core API, C#, Entity Framework, MySQL",
         image: "/images/net-api.svg",
         github_url: "https://github.com/SynysterRev/OrderManager",
         live_url: ""
-    },
-    {
-        id: 6,
-        title: "BugdetManager",
-        translationKey: "BudgetManager",
-        technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
-        image: "/images/budgetmanager.png",
-        github_url: "https://github.com/SynysterRev/BudgetManager",
-        live_url: "https://budget-manager-ruddy.vercel.app/",
-        live_url_text: "Live site"
     }
 ];

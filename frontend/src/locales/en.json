@@ -33,6 +33,8 @@
         "Harmony": "Harmony is a 2D story-driven game. I worked on the project as both a Gameplay Programmer and UI Programmer, focusing on implementing core mechanics and designing intuitive user interfaces that support the narrative experience.",
         "Jusant": "Jusant is a 3D climbing game that emphasizes exploration and environmental storytelling. I contributed to the project as a UI Programmer, developing the menu and HUD systems such as icons appearing above the interactable objects.",
         "OrdersManagerAPI": "This project is an API built with .NET Core, designed to manage orders and their associated items. It provides CRUD operations to create, read, update, and delete orders and order items. The API uses Entity Framework for data access and MySQL as the database.",
-        "BudgetManager": "Budget Manager is a Django-based web application designed to help users manage their personal finances with ease. It allows users to securely create an account, track income and expenses, organize transactions by category, and export their financial data."
+        "BudgetManager": "Budget Manager is a Django-based web application designed to help users manage their personal finances with ease. It allows users to securely create an account, track income and expenses, organize transactions by category, and export their financial data.",
+        "EpicEvent": "Epic Event is a Python-based command-line application designed to manage clients, contracts, and events for an event management company.",
+        "OrangeLettings": "Orange County Lettings is a fictional startup in the US real estate rental sector. This school project focuses on enhancing an existing website by reducing technical debt, redesigning the modular architecture into multiple apps, implementing a CI/CD pipeline with GitHub Actions, deploying through Render, and setting up error handling and log monitoring using Sentry."
     }
 }
