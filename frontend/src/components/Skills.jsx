@@ -25,6 +25,7 @@ const Skills = ({ t }) => {
         <img src={htmlIcon} alt="HTML icon" className="w-16 h-16"></img>
         <img src={cssIcon} alt="CSS icon" className="w-16 h-16"></img>
         <img src={jsIcon} alt="JavaScript icon" className="w-16 h-16"></img>
+      <img src={angularIcon} alt="Angular icon" className="w-16 h-16"></img>
         <img src={tailwindIcon} alt="Tailwind icon" className="w-16 h-16"></img>
       </div>
       <div className="w-3/4 sm:w-1/4 h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
