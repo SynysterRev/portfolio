@@ -1,23 +1,22 @@
 export const projects = [
+
     {
         id: 1,
-        title: "SoftDesk",
-        translationKey: "SoftDesk",
-        technologies: "Python, Django, Django REST Framework, PostMan, Poetry",
-        image: "/images/rest-api.svg",
-        github_url: "https://github.com/SynysterRev/SoftDesk",
-        live_url: "https://documenter.getpostman.com/view/40327893/2sAYXBEyWR",
-        live_url_text: "API documentation"
+        title: "Junior Only",
+        translationKey: "JuniorOnly",
+        technologies: "ASP .NET Core API, C#, Entity Framework, MySQL, Angular, TypeScript",
+        image: "/images/net-api.svg",
+        github_url: "https://github.com/SynysterRev/ApprenticeshipApp",
+        live_url: ""
     },
     {
         id: 2,
-        title: "BugdetManager",
-        translationKey: "BudgetManager",
-        technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
-        image: "/images/budgetmanager.png",
-        github_url: "https://github.com/SynysterRev/BudgetManager",
-        live_url: "https://budget-manager-ruddy.vercel.app/",
-        live_url_text: "Live site"
+        title: "StocksApplication",
+        translationKey: "StocksApplication",
+        technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
+        image: "/images/stocks.svg",
+        github_url: "https://github.com/SynysterRev/StocksApplication",
+        live_url: ""
     },
     {
         id: 3,
@@ -28,7 +27,7 @@ export const projects = [
         github_url: "https://github.com/SynysterRev/Orange_County_Lettings",
         live_url: "https://orange-county-lettings-l543.onrender.com",
         live_url_text: "Live site"
-    }, 
+    },
     {
         id: 4,
         title: "Epic Event",
@@ -59,20 +58,22 @@ export const projects = [
     },
     {
         id: 7,
-        title: "StocksApplication",
-        translationKey: "StocksApplication",
-        technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
-        image: "/images/stocks.svg",
-        github_url: "https://github.com/SynysterRev/StocksApplication",
-        live_url: ""
+        title: "BugdetManager",
+        translationKey: "BudgetManager",
+        technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
+        image: "/images/budgetmanager.png",
+        github_url: "https://github.com/SynysterRev/BudgetManager",
+        live_url: "https://budget-manager-ruddy.vercel.app/",
+        live_url_text: "Live site"
     },
     {
         id: 8,
-        title: "OrdersManagerAPI",
-        translationKey: "OrdersManagerAPI",
-        technologies: "ASP .NET Core API, C#, Entity Framework, MySQL",
-        image: "/images/net-api.svg",
-        github_url: "https://github.com/SynysterRev/OrderManager",
-        live_url: ""
-    }
+        title: "SoftDesk",
+        translationKey: "SoftDesk",
+        technologies: "Python, Django, Django REST Framework, PostMan, Poetry",
+        image: "/images/rest-api.svg",
+        github_url: "https://github.com/SynysterRev/SoftDesk",
+        live_url: "https://documenter.getpostman.com/view/40327893/2sAYXBEyWR",
+        live_url_text: "API documentation"
+    },
 ];

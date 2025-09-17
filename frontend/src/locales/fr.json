@@ -8,7 +8,7 @@
     },
     "about": [
         "Bonjour ! Je m'appelle Michaël, j'ai travaillé dans l'industrie du jeu vidéo pendant 4 ans en tant que programmeur gameplay.",
-        "Je me reconvertis actuellement dans le développement backend, je suis curieux et toujours prêt à apprendre de nouvelles choses !"
+        "Je me suis formé dans le développement backend afin de développer de nouvelles compétences, je suis curieux et toujours prêt à apprendre de nouvelles choses !"
     ],
     "work": "Voir mon travail",
     "skillsSection": "Outils et technologies que j’utilise :",
@@ -35,6 +35,7 @@
         "OrdersManagerAPI": "Ce projet est une API développée avec .NET Core, permettant la gestion d'ordres (orders) et de leurs éléments associés (order items). L'API propose des opérations CRUD pour créer, lire, mettre à jour et supprimer des commandes et leurs articles. Elle utilise Entity Framework pour l'accès aux données et MySQL comme base de données.",
         "BudgetManager": "Budget Manager est une application web développée avec Django, conçue pour aider les utilisateurs à gérer facilement leurs finances personnelles. Elle permet aux utilisateurs de créer un compte en toute sécurité, de suivre leurs revenus et leurs dépenses, d’organiser les transactions par catégorie et d’exporter leurs données financières.",
         "EpicEvent": "Epic Event est une application en ligne de commande développée en Python, permettant de gérer les clients, les contrats et les événements pour une société d’organisation événementielle.",
-        "OrangeLettings": "Orange County Lettings est une start-up fictive spécialisée dans la location immobilière aux États-Unis. Ce projet scolaire vise à améliorer un site web existant en réduisant la dette technique, en restructurant l’architecture en plusieurs applications modulaires, en intégrant une pipeline CI/CD avec GitHub Actions, en déployant via Render, et en mettant en place la gestion des erreurs et la journalisation des logs avec Sentry."
+        "OrangeLettings": "Orange County Lettings est une start-up fictive spécialisée dans la location immobilière aux États-Unis. Ce projet scolaire vise à améliorer un site web existant en réduisant la dette technique, en restructurant l’architecture en plusieurs applications modulaires, en intégrant une pipeline CI/CD avec GitHub Actions, en déployant via Render, et en mettant en place la gestion des erreurs et la journalisation des logs avec Sentry.",
+        "JuniorOnly": "Une plateforme de recrutement spécialement conçue pour les candidats débutants et les personnes en reconversion professionnelle à la recherche de leur premier poste permanent (CDI) ou à durée déterminée (CDD). Elle aide les utilisateurs à filtrer les offres 'junior' trompeuses et rend la recherche d'emploi plus facile et plus pertinente, avec des options de recherche par secteur, localisation et type de contrat."
     }
 }
