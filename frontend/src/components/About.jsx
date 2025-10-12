@@ -7,7 +7,7 @@ const About = ({t}) => {
             <div>
                 <h1 className="text-5xl md:text-7xl font-bold mb-8
                     bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                    Backend Developer
+                    Gameplay Programmer/Backend Developer
                 </h1>
                 <div className="text-xl md:text-2xl text-white mb-8 space-y-4">
                     {t('about', { returnObjects: true }).map((line, index) => (
