@@ -1,7 +1,16 @@
 export const projects = [
-
     {
         id: 1,
+        title: "SubManager",
+        translationKey: "SubManager",
+        technologies: "ASP .NET Core API, C#, Entity Framework, PostgreSQL, Angular, TypeScript",
+        image: "/images/submanager.png",
+        github_url: "https://github.com/SynysterRev/SubManager",
+        live_url: "https://sub-manager-dun.vercel.app/dashboard",
+        live_url_text: "Live site"
+    },
+    {
+        id: 2,
         title: "Junior Only",
         translationKey: "JuniorOnly",
         technologies: "ASP .NET Core API, C#, Entity Framework, MySQL, Angular, TypeScript",
@@ -10,7 +19,7 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 2,
+        id: 3,
         title: "StocksApplication",
         translationKey: "StocksApplication",
         technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
@@ -19,7 +28,7 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 3,
+        id: 4,
         title: "Orange County Lettings",
         translationKey: "OrangeLettings",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite, Render, Sentry, GitHub Actions",
@@ -29,7 +38,7 @@ export const projects = [
         live_url_text: "Live site"
     },
     {
-        id: 4,
+        id: 5,
         title: "Epic Event",
         translationKey: "EpicEvent",
         technologies: "Python, PostgreSQL, Sentry, CLI",
@@ -38,7 +47,7 @@ export const projects = [
         live_url: "",
     },
     {
-        id: 5,
+        id: 6,
         title: "LITRevu",
         translationKey: "LITRevu",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
@@ -46,15 +55,6 @@ export const projects = [
         github_url: "https://github.com/SynysterRev/SoftDesk",
         live_url: "https://synyst.eu.pythonanywhere.com",
         live_url_text: "Live site"
-    },
-    {
-        id: 6,
-        title: "AlgoInvest",
-        translationKey: "AlgoInvest",
-        technologies: "Python",
-        image: "/images/algo-invest.png",
-        github_url: "https://github.com/SynysterRev/AlgoInvest",
-        live_url: ""
     },
     {
         id: 7,
