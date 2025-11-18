@@ -11,6 +11,15 @@ export const projects = [
     },
     {
         id: 2,
+        title: "Rentix",
+        translationKey: "Rentix",
+        technologies: "ASP .NET Core API, C#, Entity Framework, CQRS, PostgreSQL, Angular, TypeScript",
+        image: "/images/rentix.jpeg",
+        github_url: "https://github.com/SynysterRev/rentix",
+        live_url: "",
+    },
+    {
+        id: 3,
         title: "Junior Only",
         translationKey: "JuniorOnly",
         technologies: "ASP .NET Core API, C#, Entity Framework, MySQL, Angular, TypeScript",
@@ -19,7 +28,7 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 3,
+        id: 4,
         title: "StocksApplication",
         translationKey: "StocksApplication",
         technologies: "ASP .NET Core MVC, C#, HTML, CSS, JavaScript, Entity Framework, MySQL",
@@ -28,7 +37,7 @@ export const projects = [
         live_url: ""
     },
     {
-        id: 4,
+        id: 5,
         title: "Orange County Lettings",
         translationKey: "OrangeLettings",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite, Render, Sentry, GitHub Actions",
@@ -38,7 +47,7 @@ export const projects = [
         live_url_text: "Live site"
     },
     {
-        id: 5,
+        id: 6,
         title: "Epic Event",
         translationKey: "EpicEvent",
         technologies: "Python, PostgreSQL, Sentry, CLI",
@@ -47,7 +56,7 @@ export const projects = [
         live_url: "",
     },
     {
-        id: 6,
+        id: 7,
         title: "LITRevu",
         translationKey: "LITRevu",
         technologies: "Python, Django, HTML, CSS, JavaScript, SQLite",
@@ -57,7 +66,7 @@ export const projects = [
         live_url_text: "Live site"
     },
     {
-        id: 7,
+        id: 8,
         title: "BugdetManager",
         translationKey: "BudgetManager",
         technologies: "Python, Django, HTML, CSS, JavaScript, PostgreSQL (Neon), Vercel",
@@ -67,7 +76,7 @@ export const projects = [
         live_url_text: "Live site"
     },
     {
-        id: 8,
+        id: 9,
         title: "SoftDesk",
         translationKey: "SoftDesk",
         technologies: "Python, Django, Django REST Framework, PostMan, Poetry",
